@@ -1,0 +1,48 @@
+# OS / editor junk
+.DS_Store
+.idea/
+.vscode/
+
+# Env files
+.env
+.env.local
+.env.*.local
+frontend/.env
+frontend/.env.local
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Node modules / package managers
+node_modules/
+frontend/node_modules/
+.pnpm-store/
+.turbo/
+
+# Build outputs
+dist/
+build/
+frontend/dist/
+frontend/.vite/
+
+# Hardhat / TypeChain outputs
+artifacts/
+cache/
+typechain/
+typechain-types/
+
+# Coverage outputs
+coverage/
+coverage.json
+coverage-final.json
+lcov.info
+coverage/lcov-report/
+
+# Misc tooling
+.nyc_output
+.eslintcache
+.vercel/
+.netlify/
