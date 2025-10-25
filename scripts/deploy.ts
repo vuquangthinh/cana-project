@@ -76,7 +76,7 @@ async function main() {
   await (await token.mint(await allocator.getAddress(), ecoAmount + communityAmount + teamAmount + reserveAmount + partnershipAmount)).wait();
 
   // Configure allocator wallets and allocations
-  const addr = (key: string) => process.env[key] || ethers.ZeroAddress;
+  const addr = (key: string) => (ethers.isAddress(process.env[key] || "") ? (process.env[key] as string) : ethers.ZeroAddress);
   await (await allocator.setCategory(0, addr("ECOSYSTEM_WALLET"), ecoAmount)).wait();
   await (await allocator.setCategory(1, addr("COMMUNITY_WALLET"), communityAmount)).wait();
   await (await allocator.setCategory(2, addr("TEAM_WALLET"), teamAmount)).wait();

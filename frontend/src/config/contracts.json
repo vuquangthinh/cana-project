@@ -3,7 +3,7 @@
   "rpcUrl": "https://bsc-testnet-rpc.publicnode.com",
   "contracts": {
     "SaleManager": {
-      "address": "0x0000000000000000000000000000000000000000",
+      "address": "0x776465aDF6C059b19b2978BfA114a60ae45b5074",
       "abi": [
         { "inputs": [{ "internalType": "uint256", "name": "usdt6Amount", "type": "uint256" }], "name": "buy", "outputs": [], "stateMutability": "nonpayable", "type": "function" },
         { "inputs": [{ "internalType": "uint256", "name": "tokenId", "type": "uint256" }], "name": "claim", "outputs": [], "stateMutability": "nonpayable", "type": "function" },
@@ -17,7 +17,7 @@
           { "internalType": "uint256", "name": "startTime", "type": "uint256" },
           { "internalType": "uint16", "name": "bps", "type": "uint16" }
         ], "stateMutability": "view", "type": "function" },
-        { "inputs": [], "name": "usdt", "outputs": [{ "internalType": "address", "name": "", "type": "address" }], "stateMutability": "view", "type": "function" },
+
         { "inputs": [], "name": "token", "outputs": [{ "internalType": "address", "name": "", "type": "address" }], "stateMutability": "view", "type": "function" },
         { "inputs": [], "name": "nft", "outputs": [{ "internalType": "address", "name": "", "type": "address" }], "stateMutability": "view", "type": "function" },
         { "inputs": [
@@ -32,14 +32,13 @@
       ]
     },
     "InvestorNFT": {
-      "address": "0x0000000000000000000000000000000000000000",
+      "address": "0x6F29c4323A84fb2b80959Bf2A4D540d7A39cE8dC",
       "abi": [
-        { "inputs": [{ "internalType": "address", "name": "wallet", "type": "address" }], "name": "holderTokenId", "outputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }], "stateMutability": "view", "type": "function" },
         { "inputs": [{ "internalType": "uint256", "name": "tokenId", "type": "uint256" }], "name": "totalLocked", "outputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }], "stateMutability": "view", "type": "function" }
       ]
     },
     "CanaToken": {
-      "address": "0x0000000000000000000000000000000000000000",
+      "address": "0x66723F0fAb2FBF86F92Acf92598e7Ec6eAAD1DD0",
       "abi": [
         { "inputs": [{ "internalType": "address", "name": "", "type": "address" }], "name": "balanceOf", "outputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }], "stateMutability": "view", "type": "function" },
         { "inputs": [], "name": "decimals", "outputs": [{ "internalType": "uint8", "name": "", "type": "uint8" }], "stateMutability": "view", "type": "function" },
@@ -49,7 +48,6 @@
     "USDT": {
       "address": "0x0000000000000000000000000000000000000000",
       "abi": [
-        { "inputs": [{ "internalType": "address", "name": "spender", "type": "address" }, { "internalType": "uint256", "name": "value", "type": "uint256" }], "name": "approve", "outputs": [{ "internalType": "bool", "name": "", "type": "bool" }], "stateMutability": "nonpayable", "type": "function" },
         { "inputs": [], "name": "decimals", "outputs": [{ "internalType": "uint8", "name": "", "type": "uint8" }], "stateMutability": "view", "type": "function" },
         { "inputs": [{ "internalType": "address", "name": "", "type": "address" }], "name": "balanceOf", "outputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }], "stateMutability": "view", "type": "function" }
       ]

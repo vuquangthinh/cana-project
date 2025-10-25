@@ -3,19 +3,17 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "type": "commonjs",
   "scripts": {
-    "build": "tsc -p tsconfig.json",
-    "test": "hardhat test",
-    "coverage": "hardhat coverage",
-    "deploy": "hardhat run scripts/deploy.ts",
-    "upgrade:sale": "hardhat run scripts/upgrade-sale.ts",
-    "slither": "slither . --config-file slither.config.json || echo 'Install slither to run analysis'"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@nomicfoundation/hardhat-ethers": "^3.1.0",
     "@nomicfoundation/hardhat-toolbox": "^6.1.0",
+    "@nomiclabs/hardhat-ethers": "^2.2.3",
     "@openzeppelin/hardhat-upgrades": "^3.9.1",
     "@types/chai": "^4.3.20",
     "@types/mocha": "^10.0.10",

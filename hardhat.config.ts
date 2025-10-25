@@ -1,8 +1,7 @@
 import 'dotenv/config';
 import { HardhatUserConfig } from 'hardhat/config';
-import '@nomicfoundation/hardhat-toolbox';
+import '@nomicfoundation/hardhat-ethers';
 import '@openzeppelin/hardhat-upgrades';
-import 'solidity-coverage';
 
 const {
   RPC_URL,
@@ -31,9 +30,6 @@ const config: HardhatUserConfig = {
   },
   mocha: {
     timeout: 120000
-  },
-  gasReporter: {
-    enabled: false
   }
 };
 
