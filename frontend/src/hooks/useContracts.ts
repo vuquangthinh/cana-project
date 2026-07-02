@@ -50,6 +50,9 @@ export async function token(withSigner = true) {
 }
 
 export async function approveAndBuy(usdt6Amount: bigint) {
+  if (!ethers.isAddress(cfg.contracts.USDT.address) || cfg.contracts.USDT.address.toLowerCase() === ethers.ZeroAddress.toLowerCase()) {
+    throw new Error('USDT address is not configured')
+  }
   const sale = await saleManager(true)
   const u = await usdt(true)
   const approveTx = await u.approve(cfg.contracts.SaleManager.address, usdt6Amount)

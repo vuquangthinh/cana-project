@@ -46,3 +46,4 @@ coverage/lcov-report/
 .eslintcache
 .vercel/
 .netlify/
+.opencode
